@@ -1,5 +1,5 @@
-angular.module('looper.dev', ['lbServices', 'ionic'])
-    .controller('DevCtrl', function ($scope, User) {
+angular.module('commuter.dev', ['lbServices', 'ionic'])
+    .controller('TopUpCtrl', function ($scope, User) {
 
         selectOptions = [5, 10, 15, 20, 30];
         selectAmmount = 0,

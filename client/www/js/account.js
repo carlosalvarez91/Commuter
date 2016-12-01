@@ -1,4 +1,4 @@
-angular.module('looper.account', ['lbServices', 'ionic'])
+angular.module('commuter.account', ['lbServices', 'ionic'])
     .controller('AccountCtrl', function ($scope, $location, User) {
         $scope.currentUser = User.getCurrent();
         

@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('looper', ['looper.account','looper.dev','looper.home','looper.login','looper.register', 'ionic','lbServices','bd.timedistance'])
+angular.module('commuter', ['commuter.account','commuter.dev','commuter.tap','commuter.login','commuter.register', 'ionic','lbServices','bd.timedistance'])
 
     /*.run(function ($ionicPlatform) {
      $ionicPlatform.ready(function () {
@@ -41,22 +41,22 @@ angular.module('looper', ['looper.account','looper.dev','looper.home','looper.lo
                 abstract: true,
                 templateUrl: 'templates/tabs.html'
             })
-            .state('tabs.home', {
-                url: '/home',
+            .state('tabs.tap', {
+                url: '/tap',
                 views: {
-                    'home-tab': {
-                        templateUrl: 'templates/home.html',
-                        controller: 'HomeCtrl'
+                    'tap-tab': {
+                        templateUrl: 'templates/tap.html',
+                        controller: 'TapCtrl'
                     }
                 }
             })
 
-            .state('tabs.dev', {
-                url: '/dev',
+            .state('tabs.topup', {
+                url: '/topup',
                 views: {
-                    'dev-tab': {
-                        templateUrl: 'templates/dev.html',
-                        controller: 'DevCtrl'
+                    'topup-tab': {
+                        templateUrl: 'templates/topup.html',
+                        controller: 'TopUpCtrl'
                     }
                 }
             })

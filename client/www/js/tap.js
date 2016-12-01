@@ -1,5 +1,5 @@
-angular.module('looper.home', ['lbServices'])
-.controller('HomeCtrl', function ($scope, $location, User) {
+angular.module('commuter.tap', ['lbServices'])
+.controller('TapCtrl', function ($scope, $location, User) {
     $scope.currentUser = User.getCurrent();
 
 

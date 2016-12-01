@@ -1,4 +1,4 @@
-angular.module('looper.register', ['lbServices', 'ionic'])
+angular.module('commuter.register', ['lbServices', 'ionic'])
     .controller('RegisterCtrl', function ($scope, User, $ionicPopup, $location) {
         /**
          * Currently you need to initialiate the variables
@@ -12,7 +12,7 @@ angular.module('looper.register', ['lbServices', 'ionic'])
          * Redirect user to the app if already logged in
          */
         if (User.getCachedCurrent()!==null) {
-            $location.path('tab/home');
+            $location.path('tab/tap');
         }
 
         /**
@@ -28,7 +28,7 @@ angular.module('looper.register', ['lbServices', 'ionic'])
                             User.login({include: 'user', rememberMe: true}, $scope.registration)
                                 .$promise
                                 .then(function (res) {
-                                    $location.path('tab/home')
+                                    $location.path('tab/tap')
                                 }, function (err) {
                                     $scope.loginError = err;
                                     $scope.showAlert(err.statusText, err.data.error.message);
