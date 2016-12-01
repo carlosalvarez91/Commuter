@@ -1,11 +1,11 @@
 {
   "ids": {
     "User": 10,
-    "AccessToken": 35,
+    "AccessToken": 36,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "user": 4
+    "user": 5
   },
   "models": {
     "User": {
@@ -41,7 +41,7 @@
       "rsF7151TF5J6cyDUzrdEogL3bWYIo3oTJEBujGn6rCgdsMNWCXxuu4B3J6UDUnDp": "{\"id\":\"rsF7151TF5J6cyDUzrdEogL3bWYIo3oTJEBujGn6rCgdsMNWCXxuu4B3J6UDUnDp\",\"ttl\":1209600,\"created\":\"2016-12-01T10:06:41.888Z\",\"userId\":2}",
       "Dr42guyU5HYxWU9p3yfxqUj3iNqQNxLEMFp3ZC0xi0eD5e27Wa93D3iiVq2zRhIM": "{\"id\":\"Dr42guyU5HYxWU9p3yfxqUj3iNqQNxLEMFp3ZC0xi0eD5e27Wa93D3iiVq2zRhIM\",\"ttl\":1209600,\"created\":\"2016-12-01T11:55:46.421Z\",\"userId\":3}",
       "4et8ha5RFwuEDdAYhvQdKbsmzoBKup8OUVGCa2Rc4gFSv43Kctabw4urR17rICzS": "{\"id\":\"4et8ha5RFwuEDdAYhvQdKbsmzoBKup8OUVGCa2Rc4gFSv43Kctabw4urR17rICzS\",\"ttl\":1209600,\"created\":\"2016-12-01T11:55:53.472Z\",\"userId\":3}",
-      "wiYGSyB1cgNG55C9Cru0H1tRmhI5s16syrSVH2weL2pSBK9StPvWEaARiatOwwz6": "{\"id\":\"wiYGSyB1cgNG55C9Cru0H1tRmhI5s16syrSVH2weL2pSBK9StPvWEaARiatOwwz6\",\"ttl\":1209600,\"created\":\"2016-12-01T12:19:17.229Z\",\"userId\":3}"
+      "ZtTGV7cUGUKqOBxJvQIvArj8z5VUA84S01BieBSGb3T0vuWXePNaazuzo6MkJncl": "{\"id\":\"ZtTGV7cUGUKqOBxJvQIvArj8z5VUA84S01BieBSGb3T0vuWXePNaazuzo6MkJncl\",\"ttl\":1209600,\"created\":\"2016-12-01T17:35:53.953Z\",\"userId\":4}"
     },
     "ACL": {},
     "RoleMapping": {},
@@ -49,7 +49,8 @@
     "user": {
       "1": "{\"username\":\"test1\",\"created\":\"2016-11-30T21:24:34.096Z\",\"balance\":40,\"password\":\"$2a$10$yw9Tvw8.WUjWm0BdfC3WB.e07dpysZIQBLC9/Qi5niv6YjGNjVPp2\",\"email\":\"test1@test.com\",\"id\":1}",
       "2": "{\"username\":\"test20\",\"created\":\"2016-12-01T10:06:41.366Z\",\"balance\":85,\"password\":\"$2a$10$V80DFu18bXqHrMatA.JTM.Zss4MANG5m0kaRTWLEN7YrFRLXpEETm\",\"email\":\"test20@test.com\",\"id\":2}",
-      "3": "{\"username\":\"test21\",\"created\":\"2016-12-01T11:55:45.896Z\",\"balance\":30,\"password\":\"$2a$10$h7bTLZ84TX2K9mf15.1jyOUzBFVIED2O166Ag8AZgvqQS5MQ5YXpS\",\"email\":\"test21@test.com\",\"id\":3}"
+      "3": "{\"username\":\"test21\",\"created\":\"2016-12-01T11:55:45.896Z\",\"balance\":35,\"password\":\"$2a$10$h7bTLZ84TX2K9mf15.1jyOUzBFVIED2O166Ag8AZgvqQS5MQ5YXpS\",\"email\":\"test21@test.com\",\"id\":3}",
+      "4": "{\"username\":\"test22\",\"created\":\"2016-12-01T17:35:53.451Z\",\"balance\":0,\"password\":\"$2a$10$QqRWu.Q78pvipYb3LWz3FOTDNYf4d6dk31Yag0wwecvxxV2oCylDG\",\"email\":\"test22@test.com\",\"id\":4}"
     }
   }
 }

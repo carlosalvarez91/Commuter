@@ -1,0 +1,23 @@
+<ion-view title="Top Up">
+    <ion-content padding="true">
+        <form novalidate class="simple-form">
+    <label>Amount: 
+        <select
+            ng-model="selectAmmount"
+            name="string"> 
+            <option value="5" default>5</option>
+            <option value="10" default>10</option>
+            <option value="15" default>15</option>
+            <option value="20" default>20</option>
+            <option value="30" default>30</option>
+</select>
+        </label>
+        <br />
+  
+    <input type="submit" ng-click="update(selectAmmount)" value="Top Up" />
+  </form>
+
+        <pre>actual balance = {{currentUser.balance}}</pre>
+
+    </ion-content>
+</ion-view>

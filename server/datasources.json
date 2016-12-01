@@ -3,5 +3,9 @@
     "name": "db",
     "connector": "memory",
     "file": "memoryDb.json"
+  },
+  "mongo": {
+    "name": "mongo",
+    "connector": "mongodb"
   }
 }
