@@ -1,8 +1,10 @@
 {
-  "name": "api",
+  "name": "commuter",
   "version": "0.0.0",
+  "description":"prototype",
   "main": "server/server.js",
   "scripts": {
+    "start":"server/server.js",
     "pretest": "jshint ."
   },
   "engines":{
