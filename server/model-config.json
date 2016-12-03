@@ -7,10 +7,6 @@
       "./models"
     ]
   },
-  "subsider": {
-        "dataSource": "mongo",
-        "public": true
-    },
   "User": {
     "dataSource": "db",
     "public": false

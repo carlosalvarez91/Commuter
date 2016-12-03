@@ -1,9 +1,24 @@
+// Noodlio Pay
+// Example with Checkout (Option 2)
+
+// These are fixed values, do not change this
+var NOODLIO_PAY_API_URL         = "https://noodlio-pay.p.mashape.com"; 
+var NOODLIO_PAY_API_KEY         = "0oowTZBJ9VmshckKyvhqZh6jWTICp1upeGljsnhdGboGhVjZOp";
+var NOODLIO_PAY_CHECKOUT_KEY    = {test: "pk_test_k1SD2sVRUbmaTxvyyWrhVTBB", live: "pk_live_FQs6FMNbWneaFDP9jd5hJa36"};
+
+// Obtain your unique Stripe Account Id from here:
+// https://www.noodl.io/pay/connect
+var STRIPE_ACCOUNT_ID           = "acct_185bZuBajnfE1rcS";
+
+// Define whether you are in development mode (TEST_MODE: true) or production mode (TEST_MODE: false)
+var TEST_MODE = true;
+
 // Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('commuter', ['commuter.account','commuter.dev','commuter.tap','commuter.login','commuter.register', 'ionic','lbServices','bd.timedistance'])
+angular.module('commuter', ['commuter.account','commuter.dev','commuter.tap','commuter.login','commuter.register', 'ionic','lbServices','bd.timedistance','commuter.stripeServices'])/*ISSUE: when add 'stripe.checkout' console says: GET /bower-components/../angular-stripe-checkout (404) not found*/
 
     /*.run(function ($ionicPlatform) {
      $ionicPlatform.ready(function () {
@@ -25,6 +40,8 @@ angular.module('commuter', ['commuter.account','commuter.dev','commuter.tap','co
         }
     })
     .config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
+        
+
         $stateProvider
             .state('login', {
                 url: '/login',
@@ -84,5 +101,7 @@ angular.module('commuter', ['commuter.account','commuter.dev','commuter.tap','co
                 }
             };
         });
+        
+        
     })
 ;

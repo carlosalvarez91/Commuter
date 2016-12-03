@@ -1,23 +1,37 @@
 <ion-view title="Top Up">
-    <ion-content padding="true">
-        <form novalidate class="simple-form">
-    <label>Amount: 
-        <select
-            ng-model="selectAmmount"
-            name="string"> 
-            <option value="5" default>5</option>
-            <option value="10" default>10</option>
-            <option value="15" default>15</option>
-            <option value="20" default>20</option>
-            <option value="30" default>30</option>
-</select>
-        </label>
-        <br />
-  
-    <input type="submit" ng-click="update(selectAmmount)" value="Top Up" />
-  </form>
+    <ion-content class="padding center">
 
-        <pre>actual balance = {{currentUser.balance}}</pre>
+    <form novalidate class="simple-form">
+    <div class="list">
+        <label class="item item-input item-select">
+            <div class="input-label">
+                Amount: 
+            </div>
+            <select
+                ng-model="selectAmmount"
+                name="string"> 
+                <option value="5" default>5</option>
+                <option value="10" default>10</option>
+                <option value="15" default>15</option>
+                <option value="20" default>20</option>
+                <option value="30" default>30</option>
+            </select>
+         </label>
+    </div>
+        
 
+     <div class="padding">
+        <button class="button button-block button-energized" ng-click="update(selectAmmount)">Top Up €{{selectAmmount}}</button>
+    </div>
+    </form>
+
+    <!--STRIPE
+     <p class="padding">
+         <ion-spinner ng-show="status.loading"></ion-spinner>
+     </p>
+     <p>
+         {{status.message}}
+     </p>
+    -->
     </ion-content>
 </ion-view>
