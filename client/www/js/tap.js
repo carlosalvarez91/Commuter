@@ -4,14 +4,13 @@ angular.module('commuter.tap', ['lbServices'])
 
 
 
-    function  getAmmountFromArduino(cb){
-        //TODO comunicate with arduino
+    function  tap(cb){
         cb(-5);
     };
 
     $scope.update = function () {
-
-        getAmmountFromArduino(function(ammount){
+// Integrate here nfc.addNdefListener() https://github.com/don/ionic-nfc-reader/blob/master/www/js/app.js
+        tap(function(ammount){
             User.updateBalance({
                 ammount: ammount,
                 userID: $scope.currentUser.id

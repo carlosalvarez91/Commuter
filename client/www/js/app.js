@@ -67,7 +67,6 @@ angular.module('commuter', ['commuter.account','commuter.dev','commuter.tap','co
                     }
                 }
             })
-
             .state('tabs.topup', {
                 url: '/topup',
                 views: {

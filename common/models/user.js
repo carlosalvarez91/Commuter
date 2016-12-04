@@ -1,9 +1,5 @@
 module.exports = function (User) {
 
-
-
-
-
   User.updateBalance = function (ammount, userID, cb) {
     User.findById(userID, function (err, model) {
       console.log(model);
