@@ -24,6 +24,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.frontend190403"
+        },
+        "phonegap-nfc": {
+            "PACKAGE_NAME": "com.ionicframework.frontend190403"
         }
     },
     "dependent_plugins": {}

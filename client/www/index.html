@@ -9,6 +9,8 @@
     <link href="css/ionic.app.css" rel="stylesheet">
     <!-- custom css -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="bower_components/angular-stripe-checkout/angular-stripe-checkout.js"></script>
+
 </head>
 <body ng-app="commuter">
 <ion-nav-bar class="bar-balanced nav-title-slide-ios7">
@@ -21,7 +23,7 @@
 <script src="lib/ionic/js/ionic.bundle.js"></script>
 
 <!-- cordova script (this will be a 404 during development) -->
-<!-- <script src="cordova.js"></script> -->
+<script src="cordova.js"></script> 
 
 <!-- your app's js -->
 <script src="js/app.js"></script>
@@ -30,16 +32,18 @@
 <script src="js/tap.js"></script>
 <script src="js/login.js"></script>
 <script src="js/register.js"></script>
+<script src="js/dev.js"></script>
+
 
 <script src="lib/ionic/js/angular/angular-resource.js"></script>
 <!--LOOPBACK-->
 <script src="lib/loopback-services.js"></script>
 <!--DATE-->
 <script src="lib/bd.timedistance.js"></script>
-
 <!--STRIPE-->
-    <script src="lib/stripe-services.js"></script>
-     <script src="bower_components/angular-stripe-checkout/angular-stripe-checkout.js"></script>
-   <script src="https://js.stripe.com/v2/"></script>
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script src="bower_components/angular-stripe-checkout/angular-stripe-checkout.js"></script>
+<script src="js/stripeservices.js"></script>
+
 </body>
 </html>
