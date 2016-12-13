@@ -59,7 +59,7 @@
       "2": "{\"username\":\"test20\",\"created\":\"2016-12-01T10:06:41.366Z\",\"balance\":85,\"password\":\"$2a$10$V80DFu18bXqHrMatA.JTM.Zss4MANG5m0kaRTWLEN7YrFRLXpEETm\",\"email\":\"test20@test.com\",\"id\":2}",
       "3": "{\"username\":\"test21\",\"created\":\"2016-12-01T11:55:45.896Z\",\"balance\":35,\"password\":\"$2a$10$h7bTLZ84TX2K9mf15.1jyOUzBFVIED2O166Ag8AZgvqQS5MQ5YXpS\",\"email\":\"test21@test.com\",\"id\":3}",
       "4": "{\"username\":\"test22\",\"created\":\"2016-12-01T17:35:53.451Z\",\"balance\":0,\"password\":\"$2a$10$QqRWu.Q78pvipYb3LWz3FOTDNYf4d6dk31Yag0wwecvxxV2oCylDG\",\"email\":\"test22@test.com\",\"id\":4}",
-      "5": "{\"username\":\"carlos\",\"created\":\"2016-12-03T13:16:12.531Z\",\"balance\":200,\"password\":\"$2a$10$dkDT30w26Ew03BBqNs5MQ.9f5igfeig4vb1DyA/JId5cMyucRu74q\",\"email\":\"carlos@mail.com\",\"id\":5}",
+      "5": "{\"username\":\"carlos\",\"created\":\"2016-12-03T13:16:12.531Z\",\"balance\":250,\"password\":\"$2a$10$dkDT30w26Ew03BBqNs5MQ.9f5igfeig4vb1DyA/JId5cMyucRu74q\",\"email\":\"carlos@mail.com\",\"id\":5}",
       "6": "{\"username\":\"zurita\",\"created\":\"2016-12-03T21:13:00.731Z\",\"balance\":15,\"password\":\"$2a$10$kQ23io5T2JADDOTygE4VyOwdys4OB1jn4jXZDaNXD2TtudKqYxgCm\",\"email\":\"zurita@pendejo.com\",\"id\":6}",
       "7": "{\"username\":\"test30\",\"created\":\"2016-12-03T22:17:16.915Z\",\"balance\":0,\"password\":\"$2a$10$bKDVuKi5dGPiy.upRTB/Huzgd1xs.OuDvFEza2kApVM4FQR0sWDxa\",\"email\":\"test30@test.com\",\"id\":7}",
       "8": "{\"username\":\"nci\",\"created\":\"2016-12-05T01:54:27.254Z\",\"balance\":60,\"password\":\"$2a$10$E.dyuROiEAZ4d9EW1f7fkO9i/Zlv45P78d6em.BIqBacPOSD66.Di\",\"email\":\"nci@nci.com\",\"id\":8}"

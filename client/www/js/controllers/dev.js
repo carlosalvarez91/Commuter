@@ -5,7 +5,7 @@ angular.module('commuter.dev', [])
 
   selectOptions = [5, 10, 15, 20, 30];
   selectAmmount = 0,
-
+  $scope.currentUser = User.getCurrent();
 
   $scope.status = {
     loading: false,
@@ -61,7 +61,7 @@ angular.module('commuter.dev', [])
 
     };
      //////////// UPDATE BALANCE     
-            User.updateBalance({
+           User.updateBalance({
                 ammount: ammount,
                 userID: $scope.currentUser.id
             })
@@ -74,7 +74,7 @@ angular.module('commuter.dev', [])
                 },
                 function (err) {
                     console.log(err);
-                });
+                }); 
      
   };
 

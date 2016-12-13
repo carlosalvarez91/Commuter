@@ -1,21 +1,23 @@
 <ion-view >
   <ion-content class="padding center">
 
-
-    <label>Amount:
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Amount:
+      </div>
         <select
             ng-model="selectAmmount"
             name="string"> 
-            <option value="5" default>5</option>
-            <option value="10" default>10</option>
-            <option value="15" default>15</option>
-            <option value="20" default>20</option>
-            <option value="30" default>30</option>
+                <option value="5" default>€5.00 EUR</option>
+                <option value="10" default>€10.00 EUR</option>
+                <option value="15" default>€15.00 EUR</option>
+                <option value="20" default>€20.00 EUR</option>
+                <option value="30" default>€30.00 EUR</option>
         </select>
     </label>
 
     <div class="padding">
-      <button class="button button-full button-balanced" ng-click="update(selectAmmount)">Buy for €{{selectAmmount}}</button>
+      <button class="button button-block button-energized" ng-click="update(selectAmmount)">Top Up €{{selectAmmount}}</button>
     </div>
 
     <p class="padding">
