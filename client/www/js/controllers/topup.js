@@ -13,11 +13,12 @@ angular.module('commuter.topup', [])
 
   $scope.update = function(ammount) {
 
+    var ammount_Int = parseInt(ammount);
     $scope.status['loading'] = true;
     $scope.status['message'] = "Retrieving your Stripe Token...";
 
     // first get the Stripe token
-    StripeCharge.getStripeToken($scope.selectAmmount).then(
+    StripeCharge.getStripeToken().then(
       function(stripeToken){
         // -->
         proceedCharge(stripeToken);
@@ -39,28 +40,31 @@ angular.module('commuter.topup', [])
       $scope.status['message'] = "Processing your payment...";
 
       // then chare the user through your custom node.js server (server-side)
-      StripeCharge.chargeUser(stripeToken, $scope.selectAmmount).then(
+      StripeCharge.chargeUser(stripeToken, ammount_Int).then(
         function(StripeInvoiceData){
           
           if(StripeInvoiceData.hasOwnProperty('id')) {
             $scope.status['message'] = "Success! Check your Stripe Account";
-          } else {
-            $scope.status['message'] = "Error, check your console";
-         ///UPDATE BALANCE  ---> this must be at the IF conditional, not at the ELSE
+
+            ///UPDATE BALANCE  ---> this must be at the IF conditional, not at the ELSE
             User.updateBalance({
-                ammount: ammount,
+                ammount: ammount_Int,
                 userID: $scope.currentUser.id
             })
                 .$promise
                 .then(
                 function (res) {
+                  console.log(res);
                     //alert("you have topped up " + ammount + ". \nyour new balance is " + res.newBalance);
-                    $scope.showAlert();
+                    $scope.showAlert(ammount,res.newBalance);
                 },
                 function (err) {
                     console.log(err);
                 }); 
           ///END UPDATE BALANCE
+          } else {
+            $scope.status['message'] = "Error, check your console";
+            alert("Stop messing with me, are you trying to cheat!!!")
           };
           $scope.status['loading'] = false;
           console.log(StripeInvoiceData)
@@ -76,10 +80,10 @@ angular.module('commuter.topup', [])
     };      
   };
       // ALERT
-      $scope.showAlert = function () {
+      $scope.showAlert = function (ammount , newBalance) {
         var alertPopup = $ionicPopup.alert({
-            title: 'Thank You',
-            template: 'You have topped up your Commuter correctly'
+            title: 'Thank You fot top up '+ammount,
+            template: 'You have topped up your Commuter correctly, <br> Yout new Balance is: '+newBalance
         });
         alertPopup.then(function(res) {
           console.log();
