@@ -1,6 +1,7 @@
 <ion-view >
   <ion-content class="padding center">
-
+    <form novalidate class="simple-form">
+    <div class="list">
     <label class="item item-input item-select">
       <div class="input-label">
         Amount:
@@ -15,10 +16,11 @@
                 <option value="30" default>€30.00 EUR</option>
         </select>
     </label>
-
+    </div>
     <div class="padding">
       <button class="button button-block button-energized" ng-click="update(selectAmmount)">Top Up €{{selectAmmount}}</button>
     </div>
+    </form>
 
     <p class="padding">
       <ion-spinner ng-show="status.loading"></ion-spinner>

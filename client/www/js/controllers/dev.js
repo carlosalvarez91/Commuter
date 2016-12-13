@@ -47,21 +47,8 @@ angular.module('commuter.dev', [])
             $scope.status['message'] = "Success! Check your Stripe Account";
           } else {
             $scope.status['message'] = "Error, check your console";
-          };
-          $scope.status['loading'] = false;
-          console.log(StripeInvoiceData)
-        },
-        function(error){
-          console.log(error);
-
-          $scope.status['loading'] = false;
-          $scope.status['message'] = "Oops... something went wrong";
-        }
-      );
-
-    };
-     //////////// UPDATE BALANCE     
-           User.updateBalance({
+         ///// UPDATE BALANCE  
+            User.updateBalance({
                 ammount: ammount,
                 userID: $scope.currentUser.id
             })
@@ -75,7 +62,20 @@ angular.module('commuter.dev', [])
                 function (err) {
                     console.log(err);
                 }); 
-     
+          ///// END UPDATE BALANCE
+          };
+          $scope.status['loading'] = false;
+          console.log(StripeInvoiceData)
+        },
+        function(error){
+          console.log(error);
+
+          $scope.status['loading'] = false;
+          $scope.status['message'] = "Oops... something went wrong";
+        }
+      );
+
+    };      
   };
 
 })
