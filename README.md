@@ -1,24 +1,25 @@
-Commuter App 
-Carlos Alvarez Hernandez
-National College of Ireland.
-Higher diploma in Web technologies 2016
+#Commuter App 
+#Carlos Alvarez Hernandez
+#National College of Ireland.
+#Higher diploma in Web technologies 2016
 
 
-To run the system first of all you have to open your terminal in 
-this root and run: 
+#To run the system first of all you have to open your terminal in 
+#this root and run: 
 
-$ node .
+#$ node .
 
-The next step is go to the Client folder and run in another terminal:
+#The next step is go to the Client folder and run in another terminal:
 
-$ ionic serve
+#$ ionic serve
 
-if it doesn't work you will probably have to install the following:
+#If it doesn't work you will probably have to install the following:
 
--NodeJS
--Npm
--Ionic
--Loopback
+#-NodeJS
+#-Npm
+#-Cordova
+#-Ionic
+#-Loopback
 
-
-Thank you
+#If still doesn't work please contact to me.
+#Thank you.
