@@ -1,6 +1,12 @@
 #Commuter App 
+
+
 Carlos Alvarez
+
+
 National College of Ireland.
+
+
 Higher diploma in Web technologies 2016
 
 
@@ -15,9 +21,13 @@ $ ionic serve
 If it doesn't work you will probably have to install the following:
 
 -NodeJS
+
 -Npm
+
 -Cordova
+
 -Ionic
+
 -Loopback
 
 If still doesn't work please contact to me.
