@@ -13,16 +13,16 @@
 // limitations under the License.
 
 angular.module('commuter.ionicNFC', ['ionic', 'nfcFilters'])
-/*
-    .controller('MainController', function ($scope, nfcService) {
+
+   /* .controller('MainController', function ($scope, nfcService) {
 
         $scope.tag = nfcService.tag;
         $scope.clear = function() {
             nfcService.clearTag();
         };
 
-    })
-    */
+    })*/
+    
 
     .factory('nfcService', function ($rootScope, $ionicPlatform) {
 
@@ -30,7 +30,6 @@ angular.module('commuter.ionicNFC', ['ionic', 'nfcFilters'])
 
         $ionicPlatform.ready(function() {
             nfc.addNdefListener(function (nfcEvent) {
-                alert("nfc event handler called");
                 console.log(JSON.stringify(nfcEvent.tag, null, 4));
                 $rootScope.$apply(function(){
                     angular.copy(nfcEvent.tag, tag);

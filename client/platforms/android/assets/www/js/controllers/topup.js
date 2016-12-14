@@ -46,7 +46,7 @@ angular.module('commuter.topup', [])
           if(StripeInvoiceData.hasOwnProperty('id')) {
             $scope.status['message'] = "Success! Check your Stripe Account";
 
-            ///UPDATE BALANCE  ---> this must be at the IF conditional, not at the ELSE
+            ///UPDATE BALANCE  
             User.updateBalance({
                 ammount: ammount_Int,
                 userID: $scope.currentUser.id
@@ -64,7 +64,7 @@ angular.module('commuter.topup', [])
           ///END UPDATE BALANCE
           } else {
             $scope.status['message'] = "Error, check your console";
-            alert("Stop messing with me, are you trying to cheat!!!")
+            alert("Stop messing with me, are you trying to cheat?!!!")
           };
           $scope.status['loading'] = false;
           console.log(StripeInvoiceData)
@@ -82,8 +82,8 @@ angular.module('commuter.topup', [])
       // ALERT
       $scope.showAlert = function (ammount , newBalance) {
         var alertPopup = $ionicPopup.alert({
-            title: 'Thank You fot top up '+ammount,
-            template: 'You have topped up your Commuter correctly, <br> Yout new Balance is: '+newBalance
+            title: 'You have topped up: €'+ammount,
+            template: 'Your new Balance is: €'+newBalance
         });
         alertPopup.then(function(res) {
           console.log();

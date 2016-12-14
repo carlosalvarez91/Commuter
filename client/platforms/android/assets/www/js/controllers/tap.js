@@ -1,9 +1,15 @@
 angular.module('commuter.tap', ['lbServices'])
-.controller('TapCtrl', function ($scope, $location, User, nfcService) {
+.controller('TapCtrl', function ($scope, $location, User/*, nfcService*/) {
     $scope.currentUser = User.getCurrent();
-    $scope.tag = nfcService.tag;
+    
+/*NFC controller from : https://github.com/don/ionic-nfc-reader/blob/master/www/js/app.js
 
-
+       $scope.tag = nfcService.tag;
+        $scope.clear = function() {
+            nfcService.clearTag();
+        };
+        
+*/
     function  tap(cb){
         cb(-5);
     };
