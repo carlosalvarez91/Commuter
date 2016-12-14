@@ -13,16 +13,16 @@
 // limitations under the License.
 
 angular.module('commuter.ionicNFC', ['ionic', 'nfcFilters'])
-/*
-    .controller('MainController', function ($scope, nfcService) {
+
+   /* .controller('MainController', function ($scope, nfcService) {
 
         $scope.tag = nfcService.tag;
         $scope.clear = function() {
             nfcService.clearTag();
         };
 
-    })
-    */
+    })*/
+    
 
     .factory('nfcService', function ($rootScope, $ionicPlatform) {
 

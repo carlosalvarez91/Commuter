@@ -9,7 +9,7 @@ var TEST_MODE = true;
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('commuter', ['commuter.topup','commuter.account','commuter.tap','commuter.login','commuter.register', 'ionic','lbServices','bd.timedistance','commuter.dev','commuter.stripeservices','stripe.checkout'])
+angular.module('commuter', ['commuter.topup','commuter.account','commuter.tap','commuter.login','commuter.register', 'ionic','lbServices','bd.timedistance','commuter.stripeservices','stripe.checkout','nfcFilters','commuter.ionicNFC'])
 
     /*.run(function ($ionicPlatform) {
      $ionicPlatform.ready(function () {
@@ -69,21 +69,12 @@ angular.module('commuter', ['commuter.topup','commuter.account','commuter.tap','
                     }
                 }
             })
-            .state('tabs.topup', {
+           .state('tabs.topup', {
                 url: '/topup',
                 views: {
                     'topup-tab': {
                         templateUrl: 'templates/topup.html',
-                        controller: 'TopUpCtrl'
-                    }
-                }
-            })
-           .state('tabs.dev', {
-                url: '/dev',
-                views: {
-                    'topup-tab': {
-                        templateUrl: 'templates/dev.html',
-                        controller: 'DevCtrl',
+                        controller: 'TopUpCtrl',
                          resolve: {
                              // checkout.js isn't fetched until this is resolved.
                          stripe: StripeCheckoutProvider.load

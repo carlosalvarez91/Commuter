@@ -1,7 +1,7 @@
 (function(window, angular, undefined) {
     'use strict';
 
-    var urlBase = "http://localhost:3000/api";
+    var urlBase = "https://mysterious-escarpment-17110.herokuapp.com/api";
     var authHeader = 'authorization';
 
     /**

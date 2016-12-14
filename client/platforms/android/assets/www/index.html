@@ -12,7 +12,7 @@
     <script src="bower_components/angular-stripe-checkout/angular-stripe-checkout.js"></script>
 
 </head>
-<body ng-app="commuter">
+<body ng-app="commuter" class="platform-android platform-cordova platform-webview">
 <ion-nav-bar class="bar-balanced nav-title-slide-ios7">
     <ion-nav-back-button class="button-icon ion-arrow-left-c">
     </ion-nav-back-button>
@@ -25,25 +25,26 @@
 <!-- cordova script (this will be a 404 during development) -->
 <script src="cordova.js"></script> 
 
-<!-- your app's js -->
-<script src="js/app.js"></script>
-<script src="js/account.js"></script>
-<script src="js/topup.js"></script>
-<script src="js/tap.js"></script>
-<script src="js/login.js"></script>
-<script src="js/register.js"></script>
-<script src="js/dev.js"></script>
+<!-- TODO controllers-->
+<script src="js/controllers/app.js"></script>
+<script src="js/controllers/account.js"></script>
+<script src="js/controllers/tap.js"></script>
+<script src="js/controllers/login.js"></script>
+<script src="js/controllers/register.js"></script>
+<script src="js/controllers/topup.js"></script>
 
-
+<!--TODO services-->
 <script src="lib/ionic/js/angular/angular-resource.js"></script>
 <!--LOOPBACK-->
-<script src="lib/loopback-services.js"></script>
+<script src="js/services/loopback-services.js"></script>
 <!--DATE-->
-<script src="lib/bd.timedistance.js"></script>
+<script src="js/services/bd.timedistance.js"></script>
 <!--STRIPE-->
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script src="bower_components/angular-stripe-checkout/angular-stripe-checkout.js"></script>
-<script src="js/stripeservices.js"></script>
-
+<script src="js/services/stripeservices.js"></script>
+<!--NFC-->
+<script src="js/services/nfcfilters.js"></script>
+<script src="js/services/nfcservices.js"></script>
 </body>
 </html>

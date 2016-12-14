@@ -9,7 +9,7 @@ var TEST_MODE = true;
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('commuter', ['commuter.topup','commuter.account','commuter.tap','commuter.login','commuter.register', 'ionic','lbServices','bd.timedistance','commuter.stripeservices','stripe.checkout','nfcFilters','commuter.ionicNFC'])
+angular.module('commuter', ['commuter.topup','commuter.account','commuter.tap','commuter.login','commuter.register', 'ionic','lbServices','bd.timedistance','commuter.stripeservices','stripe.checkout'/*,'nfcFilters','commuter.ionicNFC'*/])
 
     /*.run(function ($ionicPlatform) {
      $ionicPlatform.ready(function () {

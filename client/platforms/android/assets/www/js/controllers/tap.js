@@ -1,7 +1,7 @@
 angular.module('commuter.tap', ['lbServices'])
-.controller('TapCtrl', function ($scope, $location, User) {
+.controller('TapCtrl', function ($scope, $location, User, nfcService) {
     $scope.currentUser = User.getCurrent();
-
+    $scope.tag = nfcService.tag;
 
 
     function  tap(cb){
